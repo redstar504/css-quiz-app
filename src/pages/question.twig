@@ -1,0 +1,47 @@
+{% extends 'layouts/main.twig' %}
+
+{% block header %}
+    <span class="icon icon-a11y"></span>
+    <h1 id="heading">
+        Accessibility
+    </h1>
+{% endblock %}
+
+{% block content %}
+    <div id="intro">
+        <i>Question 6 of 10</i>
+
+        <h2>
+            Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?
+        </h2>
+
+        <div id="progressWrapper">
+            <div id="progressBar" style="width: 40%"></div>
+        </div>
+    </div>
+
+    <ol id="selectionList" class="questions">
+        <li>
+            <a class="card" href="/results">
+                4.5 : 1
+            </a>
+        </li>
+        <li>
+            <a class="card" href="/results">
+                3 : 1
+            </a>
+        </li>
+        <li>
+            <a class="card" href="/results">
+                2.5 : 1
+            </a>
+        </li>
+        <li>
+            <a class="card" href="/results">
+                5 : 1
+            </a>
+        </li>
+    </ol>
+
+    <button>Submit Answer</button>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'layouts/main.twig' %}
+
+{% block header %}
+    <span class="icon icon-a11y"></span>
+    <h2 id="heading">
+        Accessibility
+    </h2>
+{% endblock %}
+
+{% block content %}
+    <section id="intro">
+        <h1>
+            Quiz Completed
+            <strong>You scored...</strong>
+        </h1>
+    </section>
+
+    <section class="card" id="resultsCard">
+        <h3>
+            <span class="icon icon-a11y"></span>
+            Accessibility
+        </h3>
+        <strong>8</strong>
+        <p>out of 10</p>
+    </section>
+
+    <button onclick="window.location = 'index'">Play Again</button>
+{% endblock %}

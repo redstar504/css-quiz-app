@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon-32x32.png"/>
+    <link rel="icon" type="image/svg+xml" href="/src/assets/images/favicon-32x32.png"/>
     <meta name="viewport" content="initial-scale=1.0, viewport-fit=cover"/>
-    <title>DevJobs Web App</title>
+    <title>Quiz Web App</title>
     {% block stylesheets %}
         <link rel="stylesheet" href="/src/screen.css">
+        <link rel="stylesheet" href="/src/theme_toggle.css">
     {% endblock stylesheets %}
 </head>
-<body>
-<h1>Title</h1>
-{% block content %}{% endblock content %}
+<body id="darkMode">
+<input type="checkbox" id="themeMode" onchange="document.body.classList.toggle('darkMode')">
+<main>
+    <header>
+        {% block header %}{% endblock %}
+        <aside>
+            <label id="themeToggleWrapper" for="themeMode">
+                <span></span>
+                <b id="modeControl"><b></b></b>
+                <span></span>
+            </label>
+        </aside>
+    </header>
+    {% block content %}{% endblock %}
+</main>
 </body>

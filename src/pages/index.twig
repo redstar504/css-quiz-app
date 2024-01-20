@@ -1,5 +1,39 @@
 {% extends 'layouts/main.twig' %}
 
 {% block content %}
-Content goes here
+    <section id="intro">
+        <h1>
+            Welcome to the
+            <strong>Frontend Quiz!</strong>
+        </h1>
+
+        <i>Pick a subject to get started. </i>
+    </section>
+
+    <ul id="selectionList">
+        <li>
+            <a href="/question" class="card">
+                <span class="icon icon-html"></span>
+                HTML
+            </a>
+        </li>
+        <li>
+            <a href="/question" class="card">
+                <span class="icon icon-css"></span>
+                CSS
+            </a>
+        </li>
+        <li>
+            <a href="/question" class="card">
+                <span class="icon icon-js"></span>
+                JavaScript
+            </a>
+        </li>
+        <li>
+            <a href="/question" class="card">
+                <span class="icon icon-a11y"></span>
+                Accessibility
+            </a>
+        </li>
+    </ul>
 {% endblock %}
